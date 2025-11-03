@@ -1,0 +1,141 @@
+/* ROOT WRAPPER */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* MAIN APP */
+.app{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:25px;
+  background: linear-gradient(to bottom,#3a7bd5,#00d2ff);
+  padding:60px 25px;
+}
+
+/* HEADING */
+.heading{
+  font-size:42px;
+  color:#fff;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+/* SEARCH GROUP */
+.input-group{
+  width:350px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+/* CARD (weather box) */
+.Card{
+  width:350px;
+  padding:35px;
+  border-radius:25px;
+  backdrop-filter: blur(20px);
+  background: rgba(255,255,255,0.15);
+  box-shadow:0 8px 25px rgba(0,0,0,0.25);
+  text-align:center;
+  color:#fff;
+  transition:0.25s ease;
+}
+
+.Card:hover{
+  transform:translateY(-5px);
+}
+
+.Card:hover img{
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.7));
+}
+
+/* TEMP DISPLAY */
+.temp{
+  font-size:65px;
+  font-weight:700;
+  margin-top:8px;
+}
+
+/* CITY NAME */
+.city{
+  font-size:32px;
+  font-weight:600;
+  margin-top:12px;
+}
+
+/* CARD DETAILS */
+.extra{
+  display:flex;
+  margin-top:25px;
+  justify-content:space-between;
+}
+
+.box{
+  background:rgba(255,255,255,0.2);
+  padding:12px;
+  border-radius:15px;
+  width:48%;
+  backdrop-filter:blur(15px);
+}
+
+/* WEATHER ICON */
+.weather-icon{
+  width:120px;
+}
+
+/* INPUT */
+.input{
+  width:100%;
+  padding:14px 18px;
+  border-radius:14px;
+  border:none;
+  outline:none;
+  background:rgba(255,255,255,0.25);
+  backdrop-filter:blur(20px);
+  color:#fff;
+  font-size:18px;
+  font-weight:500;
+  transition:0.25s ease;
+}
+
+.input::placeholder{
+  color:#e8e8e8;
+  font-weight:400;
+}
+
+.input:focus{
+  background:rgba(255,255,255,0.35);
+  box-shadow:0 0 12px rgba(255,255,255,0.35);
+}
+
+/* BUTTON */
+.btn{
+  width:100%;
+  padding:14px;
+  border-radius:14px;
+  border:none;
+  cursor:pointer;
+  margin-top:12px;
+  margin-bottom:5px;
+  font-size:18px;
+  font-weight:600;
+  background:rgba(255,255,255,0.30);
+  backdrop-filter:blur(20px);
+  color:#fff;
+  transition:0.25s;
+}
+
+.btn:hover{
+  transform: translateY(-3px);
+  background:rgba(255,255,255,0.45);
+}
+
+.btn:active{
+  transform: scale(0.98);
+}
